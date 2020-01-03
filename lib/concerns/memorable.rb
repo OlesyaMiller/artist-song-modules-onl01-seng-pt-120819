@@ -1,9 +1,15 @@
 module Memorable 
-  def reset_all
-    all.clear
+  milude ClassMethods
+    def reset_all
+      all.clear
+    end
+  
+    def count
+      all.count
+    end 
   end
-
-  def count
-    all.count
-  end  
+  
+  module InstanceMethods
+    
+  end
 end
